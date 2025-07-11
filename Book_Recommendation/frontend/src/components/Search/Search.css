@@ -1,0 +1,172 @@
+/* Main container styling */
+.search-page-container {
+    margin: 2em auto;
+    padding: 1em;
+    max-width: 1200px;
+  }
+  
+  .search-page-container h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Search Form Styling */
+  .search-form-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+  }
+  
+  .search-input-field {
+    width: 50%;
+    padding: 0.8em;
+    font-size: 1.2em;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-right: 1em;
+  }
+  
+  .search-button-submit {
+    padding: 0.8em 1.5em;
+    background-color: #008080;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+  }
+  
+  .search-button-submit:hover {
+    background-color: #005757;
+  }
+  
+  /* Genre Filter Styling */
+  .genre-filter-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5em;
+    padding: 10px 300px;
+    width: 40%;
+  }
+  
+  .genre-select-dropdown {
+    padding: 0.8em;
+    font-size: 1.2em;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 50%;
+  }
+  
+  /* Book Card Styling */
+  .search-results-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5em;
+  }
+  
+  .book-item-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+    overflow: hidden; /* Ensures the content stays within bounds */
+  }
+  
+  .book-item-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .book-image-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1em;
+  }
+  
+  .book-title-text {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 0.5em;
+    white-space: nowrap; /* Prevents the title from wrapping */
+    overflow: hidden; /* Prevents overflow */
+    text-overflow: ellipsis; /* Adds an ellipsis for overflowed text */
+  }
+  
+  .book-title-text:hover {
+    text-decoration: underline;
+  }
+  
+  .book-info-text p {
+    font-size: 0.9em;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .search-input-field {
+      width: 70%;
+      margin-right: 0;
+      margin-bottom: 1em;
+    }
+  
+    .search-button-submit {
+      width: 100%;
+    }
+  
+    .genre-select-dropdown {
+      width: 70%;
+    }
+  
+    .search-results-container {
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .search-page-container h1 {
+      font-size: 2em;
+    }
+  
+    .search-input-field {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+  
+    .search-button-submit {
+      width: 100%;
+    }
+  
+    .genre-select-dropdown {
+      width: 100%;
+    }
+  
+    .search-results-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .book-item-card {
+      padding: 0.8em;
+    }
+  
+    .book-title-text {
+      font-size: 1.1em;
+      white-space: normal; /* Allows wrapping for smaller screens */
+      overflow: visible;
+      text-overflow: unset;
+    }
+  
+    .book-info-text p {
+      font-size: 0.8em;
+    }
+  }
+  

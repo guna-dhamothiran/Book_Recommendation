@@ -1,0 +1,116 @@
+/* Main container styling */
+.login-container {
+  display: flex;
+  max-width: 800px;
+  margin: 5em auto;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+/* Left section - Logo styling */
+.logo-section {
+  background-color: #008080;
+  padding: 2em;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  flex: 1;
+}
+
+.icon-android {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 640px) {
+  .login-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .logo-section {
+    display: none;
+  }
+  .login-col-right {
+    border-radius: 20px;
+  }
+}
+
+/* Adjustments for medium-sized screens */
+@media screen and (min-width: 641px) and (max-width: 800px) {
+  .login-container {
+    width: 80%;
+  }
+}
+
+/* Right section - Form styling */
+.login-col-right {
+  background-color: #ffffff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+  flex: 2;
+}
+
+.login-input {
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid #aaa;
+  padding: 0.8em 0.5em;
+  outline: none;
+  margin: 1.2em auto;
+  transition: border-bottom-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-input:focus {
+  border-bottom-color: #008080;
+  box-shadow: 0 2px 8px rgba(0, 128, 128, 0.3);
+}
+
+.login-btn {
+  width: 95%;
+  border-radius: 30px;
+  color: #008080;
+  font-weight: bold;
+  background-color: #ffffff;
+  border: 2px solid #008080;
+  padding: 0.9em;
+  margin: 1.5em auto;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-btn:hover,
+.login-btn:focus {
+  background-color: #008080;
+  color: #ffffff;
+}
+
+.login-register-link {
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+.login-register-link a {
+  color: #008080;
+  text-decoration: none;
+}
+
+.login-register-link a:hover {
+  text-decoration: underline;
+  color: #005757;
+}
+
+.login-error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 1em;
+}

@@ -1,0 +1,157 @@
+/* Main container styling */
+.signup-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 5em auto;
+  display: flex;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+/* Logo section styling */
+.logo-section {
+  background-color: #008080;
+  padding: 2em;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  flex: 1;
+}
+
+.icon-android {
+  font-size: 4em;
+  margin-bottom: 0.5em;
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 640px) {
+  .signup-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .logo-section {
+    display: none;
+  }
+  .signup-col-right {
+    border-radius: 20px;
+    border-top: none;
+  }
+}
+
+/* Adjustments for medium-sized screens */
+@media screen and (min-width: 641px) and (max-width: 800px) {
+  .signup-container {
+    width: 80%;
+  }
+}
+
+/* Form container styling */
+.signup-col-right {
+  background-color: #ffffff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: none;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 2;
+}
+
+.signup-form-container {
+  padding: 2em;
+}
+
+.signup-input {
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid #aaa;
+  padding: 0.8em 0.5em;
+  padding-left: 1.5em;
+  outline: none;
+  margin: 1.2em auto;
+  transition: border-bottom-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-input:focus {
+  border-bottom-color: #008080;
+  box-shadow: 0 2px 8px rgba(0, 128, 128, 0.3);
+  border-radius: 4px;
+}
+
+/* Submit button styling */
+.signup-btn {
+  width: 80%;
+  border-radius: 30px;
+  color: #008080;
+  font-weight: bold;
+  background-color: #ffffff;
+  border: 2px solid #008080;
+  padding: 0.8em;
+  margin: 1.5em auto;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.signup-btn:hover,
+.signup-btn:focus {
+  background-color: #008080;
+  color: #ffffff;
+}
+
+/* Register link styling */
+.signup-register-link {
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+.signup-register-link a {
+  color: #008080;
+  text-decoration: none;
+}
+
+.signup-register-link a:hover {
+  text-decoration: underline;
+  color: #005757;
+}
+
+/* Footer area styling */
+.signup-footer {
+  margin-top: 2em;
+  text-align: center;
+}
+
+/* Center text */
+.signup-text-center {
+  text-align: center;
+  margin: 0;
+}
+
+/* Error message styling */
+.login-error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 1em;
+}
+
+/* Genre section styling */
+.signup-genre-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.signup-genre-label {
+  width: 45%;
+  margin-bottom: 1em;
+}
+
+.signup-genre-title {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
